@@ -1,0 +1,62 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002037bd08fa0 .scope module, "xor_gate_tb" "xor_gate_tb" 2 4;
+ .timescale -9 -9;
+v000002037bbc6060_0 .var "A_TB", 0 0;
+v000002037bd0b980_0 .var "B_TB", 0 0;
+v000002037bd0ba20_0 .net "F_TB", 0 0, L_000002037bd0bb30;  1 drivers
+S_000002037bbc5cf0 .scope module, "DUT" "xor_gate" 2 9, 3 2 0, S_000002037bd08fa0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "Y";
+    .port_info 1 /INPUT 1 "A";
+    .port_info 2 /INPUT 1 "B";
+L_000002037bbc6100 .functor NAND 1, v000002037bbc6060_0, v000002037bd0b980_0, C4<1>, C4<1>;
+L_000002037bd07230 .functor NAND 1, v000002037bbc6060_0, L_000002037bbc6100, C4<1>, C4<1>;
+L_000002037bd0bac0 .functor NAND 1, v000002037bd0b980_0, L_000002037bbc6100, C4<1>, C4<1>;
+L_000002037bd0bb30 .functor NAND 1, L_000002037bd07230, L_000002037bd0bac0, C4<1>, C4<1>;
+v000002037bd07010_0 .net "A", 0 0, v000002037bbc6060_0;  1 drivers
+v000002037bd06df0_0 .net "B", 0 0, v000002037bd0b980_0;  1 drivers
+v000002037bd06b70_0 .net "Y", 0 0, L_000002037bd0bb30;  alias, 1 drivers
+v000002037bbc5e80_0 .net "w1", 0 0, L_000002037bbc6100;  1 drivers
+v000002037bbc5f20_0 .net "w2", 0 0, L_000002037bd07230;  1 drivers
+v000002037bbc5fc0_0 .net "w3", 0 0, L_000002037bd0bac0;  1 drivers
+    .scope S_000002037bd08fa0;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "xor_gate.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002037bd08fa0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002037bbc6060_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002037bd0b980_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002037bbc6060_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002037bd0b980_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002037bbc6060_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002037bd0b980_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002037bbc6060_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002037bd0b980_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "xor_gate_tb.v";
+    "./xor_gate.v";
