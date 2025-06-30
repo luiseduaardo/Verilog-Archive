@@ -1,0 +1,1202 @@
+$date
+	Sun Jun 29 19:07:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module full_adder8b_tb $end
+$var wire 8 ! S_TB [7:0] $end
+$var wire 1 " Cout_TB $end
+$var reg 8 # A_TB [7:0] $end
+$var reg 8 $ B_TB [7:0] $end
+$var reg 1 % Cin_TB $end
+$scope module DUT $end
+$var wire 8 & A [7:0] $end
+$var wire 8 ' B [7:0] $end
+$var wire 1 % Cin $end
+$var wire 7 ( carry [6:0] $end
+$var wire 8 ) S [7:0] $end
+$var wire 1 " Cout $end
+$scope module FA0 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 % Cin $end
+$var wire 1 , xor_temp $end
+$var wire 1 - or1_temp $end
+$var wire 1 . and3_temp $end
+$var wire 1 / and2_temp $end
+$var wire 1 0 and1_temp $end
+$var wire 1 1 S $end
+$var wire 1 2 Cout $end
+$scope module and1 $end
+$var wire 1 + A $end
+$var wire 1 % B $end
+$var wire 1 0 Y $end
+$var wire 1 3 w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 / Y $end
+$var wire 1 4 w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 * A $end
+$var wire 1 % B $end
+$var wire 1 . Y $end
+$var wire 1 5 w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 0 A $end
+$var wire 1 / B $end
+$var wire 1 - Y $end
+$var wire 1 6 w1 $end
+$var wire 1 7 w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 - A $end
+$var wire 1 . B $end
+$var wire 1 2 Y $end
+$var wire 1 8 w1 $end
+$var wire 1 9 w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 , Y $end
+$var wire 1 : w1 $end
+$var wire 1 ; w2 $end
+$var wire 1 < w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 , A $end
+$var wire 1 % B $end
+$var wire 1 1 Y $end
+$var wire 1 = w1 $end
+$var wire 1 > w2 $end
+$var wire 1 ? w3 $end
+$upscope $end
+$upscope $end
+$scope module FA1 $end
+$var wire 1 @ A $end
+$var wire 1 A B $end
+$var wire 1 B Cin $end
+$var wire 1 C xor_temp $end
+$var wire 1 D or1_temp $end
+$var wire 1 E and3_temp $end
+$var wire 1 F and2_temp $end
+$var wire 1 G and1_temp $end
+$var wire 1 H S $end
+$var wire 1 I Cout $end
+$scope module and1 $end
+$var wire 1 A A $end
+$var wire 1 B B $end
+$var wire 1 G Y $end
+$var wire 1 J w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 @ A $end
+$var wire 1 A B $end
+$var wire 1 F Y $end
+$var wire 1 K w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 @ A $end
+$var wire 1 B B $end
+$var wire 1 E Y $end
+$var wire 1 L w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 G A $end
+$var wire 1 F B $end
+$var wire 1 D Y $end
+$var wire 1 M w1 $end
+$var wire 1 N w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 D A $end
+$var wire 1 E B $end
+$var wire 1 I Y $end
+$var wire 1 O w1 $end
+$var wire 1 P w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 @ A $end
+$var wire 1 A B $end
+$var wire 1 C Y $end
+$var wire 1 Q w1 $end
+$var wire 1 R w2 $end
+$var wire 1 S w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 C A $end
+$var wire 1 B B $end
+$var wire 1 H Y $end
+$var wire 1 T w1 $end
+$var wire 1 U w2 $end
+$var wire 1 V w3 $end
+$upscope $end
+$upscope $end
+$scope module FA2 $end
+$var wire 1 W A $end
+$var wire 1 X B $end
+$var wire 1 Y Cin $end
+$var wire 1 Z xor_temp $end
+$var wire 1 [ or1_temp $end
+$var wire 1 \ and3_temp $end
+$var wire 1 ] and2_temp $end
+$var wire 1 ^ and1_temp $end
+$var wire 1 _ S $end
+$var wire 1 ` Cout $end
+$scope module and1 $end
+$var wire 1 X A $end
+$var wire 1 Y B $end
+$var wire 1 ^ Y $end
+$var wire 1 a w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 W A $end
+$var wire 1 X B $end
+$var wire 1 ] Y $end
+$var wire 1 b w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 W A $end
+$var wire 1 Y B $end
+$var wire 1 \ Y $end
+$var wire 1 c w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 ^ A $end
+$var wire 1 ] B $end
+$var wire 1 [ Y $end
+$var wire 1 d w1 $end
+$var wire 1 e w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 [ A $end
+$var wire 1 \ B $end
+$var wire 1 ` Y $end
+$var wire 1 f w1 $end
+$var wire 1 g w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 W A $end
+$var wire 1 X B $end
+$var wire 1 Z Y $end
+$var wire 1 h w1 $end
+$var wire 1 i w2 $end
+$var wire 1 j w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 Z A $end
+$var wire 1 Y B $end
+$var wire 1 _ Y $end
+$var wire 1 k w1 $end
+$var wire 1 l w2 $end
+$var wire 1 m w3 $end
+$upscope $end
+$upscope $end
+$scope module FA3 $end
+$var wire 1 n A $end
+$var wire 1 o B $end
+$var wire 1 p Cin $end
+$var wire 1 q xor_temp $end
+$var wire 1 r or1_temp $end
+$var wire 1 s and3_temp $end
+$var wire 1 t and2_temp $end
+$var wire 1 u and1_temp $end
+$var wire 1 v S $end
+$var wire 1 w Cout $end
+$scope module and1 $end
+$var wire 1 o A $end
+$var wire 1 p B $end
+$var wire 1 u Y $end
+$var wire 1 x w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 n A $end
+$var wire 1 o B $end
+$var wire 1 t Y $end
+$var wire 1 y w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 n A $end
+$var wire 1 p B $end
+$var wire 1 s Y $end
+$var wire 1 z w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 u A $end
+$var wire 1 t B $end
+$var wire 1 r Y $end
+$var wire 1 { w1 $end
+$var wire 1 | w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 r A $end
+$var wire 1 s B $end
+$var wire 1 w Y $end
+$var wire 1 } w1 $end
+$var wire 1 ~ w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 n A $end
+$var wire 1 o B $end
+$var wire 1 q Y $end
+$var wire 1 !" w1 $end
+$var wire 1 "" w2 $end
+$var wire 1 #" w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 q A $end
+$var wire 1 p B $end
+$var wire 1 v Y $end
+$var wire 1 $" w1 $end
+$var wire 1 %" w2 $end
+$var wire 1 &" w3 $end
+$upscope $end
+$upscope $end
+$scope module FA4 $end
+$var wire 1 '" A $end
+$var wire 1 (" B $end
+$var wire 1 )" Cin $end
+$var wire 1 *" xor_temp $end
+$var wire 1 +" or1_temp $end
+$var wire 1 ," and3_temp $end
+$var wire 1 -" and2_temp $end
+$var wire 1 ." and1_temp $end
+$var wire 1 /" S $end
+$var wire 1 0" Cout $end
+$scope module and1 $end
+$var wire 1 (" A $end
+$var wire 1 )" B $end
+$var wire 1 ." Y $end
+$var wire 1 1" w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 '" A $end
+$var wire 1 (" B $end
+$var wire 1 -" Y $end
+$var wire 1 2" w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 '" A $end
+$var wire 1 )" B $end
+$var wire 1 ," Y $end
+$var wire 1 3" w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 ." A $end
+$var wire 1 -" B $end
+$var wire 1 +" Y $end
+$var wire 1 4" w1 $end
+$var wire 1 5" w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 +" A $end
+$var wire 1 ," B $end
+$var wire 1 0" Y $end
+$var wire 1 6" w1 $end
+$var wire 1 7" w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 '" A $end
+$var wire 1 (" B $end
+$var wire 1 *" Y $end
+$var wire 1 8" w1 $end
+$var wire 1 9" w2 $end
+$var wire 1 :" w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 *" A $end
+$var wire 1 )" B $end
+$var wire 1 /" Y $end
+$var wire 1 ;" w1 $end
+$var wire 1 <" w2 $end
+$var wire 1 =" w3 $end
+$upscope $end
+$upscope $end
+$scope module FA5 $end
+$var wire 1 >" A $end
+$var wire 1 ?" B $end
+$var wire 1 @" Cin $end
+$var wire 1 A" xor_temp $end
+$var wire 1 B" or1_temp $end
+$var wire 1 C" and3_temp $end
+$var wire 1 D" and2_temp $end
+$var wire 1 E" and1_temp $end
+$var wire 1 F" S $end
+$var wire 1 G" Cout $end
+$scope module and1 $end
+$var wire 1 ?" A $end
+$var wire 1 @" B $end
+$var wire 1 E" Y $end
+$var wire 1 H" w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 >" A $end
+$var wire 1 ?" B $end
+$var wire 1 D" Y $end
+$var wire 1 I" w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 >" A $end
+$var wire 1 @" B $end
+$var wire 1 C" Y $end
+$var wire 1 J" w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 E" A $end
+$var wire 1 D" B $end
+$var wire 1 B" Y $end
+$var wire 1 K" w1 $end
+$var wire 1 L" w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 B" A $end
+$var wire 1 C" B $end
+$var wire 1 G" Y $end
+$var wire 1 M" w1 $end
+$var wire 1 N" w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 >" A $end
+$var wire 1 ?" B $end
+$var wire 1 A" Y $end
+$var wire 1 O" w1 $end
+$var wire 1 P" w2 $end
+$var wire 1 Q" w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 A" A $end
+$var wire 1 @" B $end
+$var wire 1 F" Y $end
+$var wire 1 R" w1 $end
+$var wire 1 S" w2 $end
+$var wire 1 T" w3 $end
+$upscope $end
+$upscope $end
+$scope module FA6 $end
+$var wire 1 U" A $end
+$var wire 1 V" B $end
+$var wire 1 W" Cin $end
+$var wire 1 X" xor_temp $end
+$var wire 1 Y" or1_temp $end
+$var wire 1 Z" and3_temp $end
+$var wire 1 [" and2_temp $end
+$var wire 1 \" and1_temp $end
+$var wire 1 ]" S $end
+$var wire 1 ^" Cout $end
+$scope module and1 $end
+$var wire 1 V" A $end
+$var wire 1 W" B $end
+$var wire 1 \" Y $end
+$var wire 1 _" w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 U" A $end
+$var wire 1 V" B $end
+$var wire 1 [" Y $end
+$var wire 1 `" w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 U" A $end
+$var wire 1 W" B $end
+$var wire 1 Z" Y $end
+$var wire 1 a" w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 \" A $end
+$var wire 1 [" B $end
+$var wire 1 Y" Y $end
+$var wire 1 b" w1 $end
+$var wire 1 c" w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 Y" A $end
+$var wire 1 Z" B $end
+$var wire 1 ^" Y $end
+$var wire 1 d" w1 $end
+$var wire 1 e" w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 U" A $end
+$var wire 1 V" B $end
+$var wire 1 X" Y $end
+$var wire 1 f" w1 $end
+$var wire 1 g" w2 $end
+$var wire 1 h" w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 X" A $end
+$var wire 1 W" B $end
+$var wire 1 ]" Y $end
+$var wire 1 i" w1 $end
+$var wire 1 j" w2 $end
+$var wire 1 k" w3 $end
+$upscope $end
+$upscope $end
+$scope module FA7 $end
+$var wire 1 l" A $end
+$var wire 1 m" B $end
+$var wire 1 n" Cin $end
+$var wire 1 o" xor_temp $end
+$var wire 1 p" or1_temp $end
+$var wire 1 q" and3_temp $end
+$var wire 1 r" and2_temp $end
+$var wire 1 s" and1_temp $end
+$var wire 1 t" S $end
+$var wire 1 " Cout $end
+$scope module and1 $end
+$var wire 1 m" A $end
+$var wire 1 n" B $end
+$var wire 1 s" Y $end
+$var wire 1 u" w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 l" A $end
+$var wire 1 m" B $end
+$var wire 1 r" Y $end
+$var wire 1 v" w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 l" A $end
+$var wire 1 n" B $end
+$var wire 1 q" Y $end
+$var wire 1 w" w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 s" A $end
+$var wire 1 r" B $end
+$var wire 1 p" Y $end
+$var wire 1 x" w1 $end
+$var wire 1 y" w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 p" A $end
+$var wire 1 q" B $end
+$var wire 1 " Y $end
+$var wire 1 z" w1 $end
+$var wire 1 {" w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 l" A $end
+$var wire 1 m" B $end
+$var wire 1 o" Y $end
+$var wire 1 |" w1 $end
+$var wire 1 }" w2 $end
+$var wire 1 ~" w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 o" A $end
+$var wire 1 n" B $end
+$var wire 1 t" Y $end
+$var wire 1 !# w1 $end
+$var wire 1 "# w2 $end
+$var wire 1 ## w3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1##
+1"#
+1!#
+1~"
+1}"
+1|"
+1{"
+1z"
+1y"
+1x"
+1w"
+1v"
+1u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0m"
+0l"
+1k"
+1j"
+1i"
+1h"
+1g"
+1f"
+1e"
+1d"
+1c"
+1b"
+1a"
+1`"
+1_"
+0^"
+0]"
+0\"
+0["
+0Z"
+0Y"
+0X"
+0W"
+0V"
+0U"
+1T"
+1S"
+1R"
+1Q"
+1P"
+1O"
+1N"
+1M"
+1L"
+1K"
+1J"
+1I"
+1H"
+0G"
+0F"
+0E"
+0D"
+0C"
+0B"
+0A"
+0@"
+0?"
+0>"
+1="
+1<"
+1;"
+1:"
+19"
+18"
+17"
+16"
+15"
+14"
+13"
+12"
+11"
+00"
+0/"
+0."
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+1&"
+1%"
+1$"
+1#"
+1""
+1!"
+1~
+1}
+1|
+1{
+1z
+1y
+1x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+1m
+1l
+1k
+1j
+1i
+1h
+1g
+1f
+1e
+1d
+1c
+1b
+1a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+1O
+1N
+1M
+1L
+1K
+1J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10
+1"
+0{"
+1q"
+0w"
+0!#
+1##
+1n"
+1^"
+0e"
+1Z"
+0a"
+0i"
+1k"
+1W"
+1G"
+0N"
+1C"
+0J"
+0R"
+1T"
+1@"
+10"
+07"
+1,"
+03"
+0;"
+1="
+1)"
+1w
+0~
+1s
+0z
+0$"
+1&"
+1p
+1`
+0g
+1\
+0c
+0k
+1m
+1Y
+1I
+0P
+1E
+0L
+0T
+1V
+1B
+b1111111 (
+12
+08
+1-
+01
+0H
+0_
+0v
+0/"
+0F"
+0]"
+b0 !
+b0 )
+0t"
+07
+1>
+1U
+1l
+1%"
+1<"
+1S"
+1j"
+1"#
+1/
+0,
+1C
+1Z
+1q
+1*"
+1A"
+1X"
+1o"
+04
+0:
+1;
+0R
+0i
+0""
+09"
+0P"
+0g"
+0}"
+1+
+1*
+1@
+1W
+1n
+1'"
+1>"
+1U"
+1l"
+b1 $
+b1 '
+b11111111 #
+b11111111 &
+#20
+1="
+1k"
+0/"
+0]"
+1<"
+1j"
+0;"
+0i"
+1)"
+1W"
+1w
+1G"
+1"
+1&"
+1T"
+1##
+0~
+0v
+0N"
+0F"
+0{"
+0t"
+1s
+1%"
+1C"
+1S"
+1q"
+1"#
+0z
+0$"
+0J"
+0R"
+0w"
+0!#
+0f
+06"
+0d"
+1p
+1@"
+1n"
+1[
+1+"
+1Y"
+0=
+1>
+1`
+10"
+b1111111 (
+1^"
+0d
+04"
+0b"
+17
+1,
+1g
+17"
+1e"
+06
+1^
+1."
+1\"
+0/
+0<
+0\
+0,"
+0Z"
+10
+b0 !
+b0 )
+01
+0a
+0j
+01"
+0:"
+0_"
+0h"
+14
+1:
+1c
+1i
+13"
+19"
+1a"
+1g"
+03
+1?
+1X
+1("
+1V"
+0*
+0W
+0'"
+0U"
+1%
+b1010101 $
+b1010101 '
+b10101010 #
+b10101010 &
+#30
+0"
+1##
+1{"
+1t"
+0q"
+0"#
+1w"
+1!#
+0n"
+0^"
+1k"
+1]"
+0j"
+1i"
+1&"
+1v
+0W"
+0%"
+0G"
+1T"
+1$"
+1N"
+1F"
+0p
+0C"
+0S"
+0`
+1J"
+1R"
+1f
+0@"
+1H
+0[
+00"
+0U
+1m
+1="
+1d
+1_
+1/"
+1T
+0^
+0l
+0<"
+0B
+1a
+1k
+1;"
+02
+1O
+1}
+16"
+1d"
+0Y
+0)"
+18
+0D
+0r
+0+"
+0Y"
+0I
+b0 (
+0w
+0-
+1M
+1{
+14"
+1b"
+1P
+1~
+17"
+1e"
+16
+b11111111 !
+b11111111 )
+11
+0G
+0u
+0."
+0\"
+0E
+0s
+0,"
+0Z"
+00
+0>
+1J
+0S
+1x
+0#"
+11"
+1:"
+1_"
+1h"
+1L
+1R
+1z
+1""
+13"
+09"
+1a"
+0g"
+13
+1=
+1A
+1o
+0("
+0V"
+0@
+0n
+1'"
+1U"
+0%
+b1111 $
+b1111 '
+b11110000 #
+b11110000 &
+#40
+0K"
+0N"
+0b"
+0e"
+0x"
+0{"
+0d
+0g
+0{
+0~
+04"
+07"
+1E"
+1C"
+1\"
+1Z"
+1s"
+1q"
+1^
+1\
+1u
+1s
+1."
+1,"
+0H"
+0J"
+0T"
+0_"
+0a"
+0k"
+0u"
+0w"
+0##
+0a
+0c
+0m
+0x
+0z
+0&"
+01"
+03"
+0="
+0M
+0P
+1@"
+1W"
+1n"
+1Y
+1p
+1)"
+1G
+1E
+10"
+1G"
+1^"
+1"
+1I
+1`
+1w
+0J
+0L
+0V
+06"
+1/"
+0M"
+1F"
+0d"
+1]"
+0z"
+1t"
+0O
+1H
+0f
+1_
+0}
+1v
+08
+1B
+1+"
+1<"
+1B"
+1S"
+1Y"
+1j"
+1p"
+1"#
+1D
+1U
+1[
+1l
+1r
+1%"
+1-
+b1111111 (
+12
+05"
+0*"
+0L"
+0A"
+0c"
+0X"
+0y"
+0o"
+07
+0,
+0N
+0C
+0e
+0Z
+0|
+0q
+06
+09
+b11111111 !
+b11111111 )
+11
+1-"
+19"
+1D"
+1P"
+1["
+1g"
+1r"
+1}"
+1/
+1<
+1F
+1S
+1]
+1j
+1t
+1#"
+10
+1.
+1>
+02"
+08"
+1:"
+0I"
+0O"
+1Q"
+0`"
+0f"
+1h"
+0v"
+0|"
+1~"
+04
+0:
+1;
+0K
+0Q
+1R
+0b
+0h
+1i
+0y
+0!"
+1""
+03
+05
+1=
+0?
+1("
+1?"
+1V"
+1m"
+1*
+1@
+1W
+1n
+1%
+b11111111 $
+b11111111 '
+b11111111 #
+b11111111 &
+#50

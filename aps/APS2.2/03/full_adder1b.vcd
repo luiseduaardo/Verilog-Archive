@@ -1,0 +1,185 @@
+$date
+	Sun Jun 29 18:09:58 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module full_adder1b_tb $end
+$var wire 1 ! S_TB $end
+$var wire 1 " Cout_TB $end
+$var reg 1 # A_TB $end
+$var reg 1 $ B_TB $end
+$var reg 1 % Cin_TB $end
+$scope module DUT $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % Cin $end
+$var wire 1 & xor_temp $end
+$var wire 1 ' or1_temp $end
+$var wire 1 ( and3_temp $end
+$var wire 1 ) and2_temp $end
+$var wire 1 * and1_temp $end
+$var wire 1 ! S $end
+$var wire 1 " Cout $end
+$scope module and1 $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 * Y $end
+$var wire 1 + w1 $end
+$upscope $end
+$scope module and2 $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 ) Y $end
+$var wire 1 , w1 $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 # A $end
+$var wire 1 % B $end
+$var wire 1 ( Y $end
+$var wire 1 - w1 $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 * A $end
+$var wire 1 ) B $end
+$var wire 1 ' Y $end
+$var wire 1 . w1 $end
+$var wire 1 / w2 $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 ' A $end
+$var wire 1 ( B $end
+$var wire 1 " Y $end
+$var wire 1 0 w1 $end
+$var wire 1 1 w2 $end
+$upscope $end
+$scope module xor1 $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 & Y $end
+$var wire 1 2 w1 $end
+$var wire 1 3 w2 $end
+$var wire 1 4 w3 $end
+$upscope $end
+$scope module xor2 $end
+$var wire 1 & A $end
+$var wire 1 % B $end
+$var wire 1 ! Y $end
+$var wire 1 5 w1 $end
+$var wire 1 6 w2 $end
+$var wire 1 7 w3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+1.
+1-
+1,
+1+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+07
+1%
+#20
+06
+1&
+1!
+04
+17
+1$
+0%
+#30
+1"
+00
+1'
+0.
+0!
+1*
+16
+0+
+05
+17
+1%
+#40
+0"
+10
+0'
+1.
+1!
+0*
+06
+03
+14
+1+
+15
+1#
+0$
+0%
+#50
+1"
+01
+0!
+1(
+16
+0-
+05
+17
+1%
+#60
+00
+1'
+1"
+0/
+0&
+11
+0!
+1)
+13
+0(
+16
+0,
+02
+14
+1-
+15
+1$
+0%
+#70
+0.
+01
+1*
+1(
+1!
+0+
+0-
+07
+1%
+#80
