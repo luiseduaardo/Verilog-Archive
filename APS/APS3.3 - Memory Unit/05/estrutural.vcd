@@ -1,0 +1,237 @@
+$date
+	Fri Jul 18 21:02:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module estrutural_tb $end
+$var wire 1 ! YLW $end
+$var wire 1 " RED $end
+$var wire 1 # GRN $end
+$var reg 1 $ CAR $end
+$var reg 1 % TIMEOUT $end
+$var reg 1 & clk $end
+$var reg 80 ' estado_legivel [80:1] $end
+$var reg 1 ( res $end
+$scope module dut $end
+$var wire 1 $ CAR $end
+$var wire 1 % TIMEOUT $end
+$var wire 1 & clk $end
+$var wire 1 ( res $end
+$var wire 1 ) timeout_n $end
+$var wire 1 * and_d1b $end
+$var wire 1 + and_d1a $end
+$var wire 1 , and_d0 $end
+$var wire 1 ! YLW $end
+$var wire 1 " RED $end
+$var wire 1 - Q1_n $end
+$var wire 1 . Q1 $end
+$var wire 1 / Q0_n $end
+$var wire 1 0 Q0 $end
+$var wire 1 # GRN $end
+$var wire 1 1 D1 $end
+$var wire 1 2 D0 $end
+$scope module AND_for_D0A $end
+$var wire 1 , Y $end
+$var wire 1 3 w1 $end
+$var wire 1 / B $end
+$var wire 1 - A $end
+$upscope $end
+$scope module AND_for_D0B $end
+$var wire 1 , A $end
+$var wire 1 $ B $end
+$var wire 1 2 Y $end
+$var wire 1 4 w1 $end
+$upscope $end
+$scope module AND_for_D1A $end
+$var wire 1 + Y $end
+$var wire 1 5 w1 $end
+$var wire 1 / B $end
+$var wire 1 . A $end
+$upscope $end
+$scope module AND_for_D1B $end
+$var wire 1 + A $end
+$var wire 1 * Y $end
+$var wire 1 6 w1 $end
+$var wire 1 ) B $end
+$upscope $end
+$scope module AND_for_GRN $end
+$var wire 1 # Y $end
+$var wire 1 7 w1 $end
+$var wire 1 / B $end
+$var wire 1 - A $end
+$upscope $end
+$scope module AND_for_RED $end
+$var wire 1 " Y $end
+$var wire 1 8 w1 $end
+$var wire 1 / B $end
+$var wire 1 . A $end
+$upscope $end
+$scope module AND_for_YLW $end
+$var wire 1 ! Y $end
+$var wire 1 9 w1 $end
+$var wire 1 0 B $end
+$var wire 1 - A $end
+$upscope $end
+$scope module DFF0 $end
+$var wire 1 & Clock $end
+$var wire 1 2 D $end
+$var wire 1 : Preset $end
+$var wire 1 ( Reset $end
+$var reg 1 0 Q $end
+$var reg 1 / Qn $end
+$upscope $end
+$scope module DFF1 $end
+$var wire 1 & Clock $end
+$var wire 1 ; Preset $end
+$var wire 1 ( Reset $end
+$var wire 1 1 D $end
+$var reg 1 . Q $end
+$var reg 1 - Qn $end
+$upscope $end
+$scope module NOT_for_timeout $end
+$var wire 1 % A $end
+$var wire 1 ) Y $end
+$upscope $end
+$scope module OR_for_D1 $end
+$var wire 1 0 A $end
+$var wire 1 * B $end
+$var wire 1 1 Y $end
+$var wire 1 < w1 $end
+$var wire 1 = w2 $end
+$upscope $end
+$upscope $end
+$scope task print_status $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x=
+x<
+1;
+1:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+bx '
+0&
+x%
+x$
+x#
+x"
+x!
+$end
+#5000
+1&
+#10000
+0&
+#15000
+1&
+#20000
+02
+1)
+14
+0&
+0%
+0$
+1(
+#25000
+b1000001010100000100000101000111010000010100010001001111 '
+0!
+1<
+19
+1/
+00
+1&
+#30000
+0&
+#35000
+01
+1=
+0*
+b101011001000101010100100100010001000101 '
+16
+1#
+1,
+0"
+0+
+07
+03
+18
+15
+1-
+0.
+1&
+0(
+#40000
+0&
+#45000
+1&
+#50000
+0&
+#55000
+12
+04
+1&
+1$
+#60000
+0&
+#65000
+02
+14
+1&
+0$
+#70000
+0&
+#75000
+1&
+#80000
+0&
+#85000
+1&
+#90000
+0&
+#95000
+1&
+#100000
+0&
+#105000
+0)
+1&
+1%
+#110000
+0&
+#115000
+1)
+1&
+0%
+#120000
+0&
+#125000
+1&
+#130000
+0&
+#135000
+1&
