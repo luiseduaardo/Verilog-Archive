@@ -1,0 +1,633 @@
+$date
+	Fri Aug 15 06:35:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_control_unit $end
+$var wire 1 ! write $end
+$var wire 1 " PC_Load $end
+$var wire 1 # PC_Inc $end
+$var wire 1 $ MAR_Load $end
+$var wire 1 % IR_Load $end
+$var wire 1 & CCR_Load $end
+$var wire 2 ' Bus2_Sel [1:0] $end
+$var wire 2 ( Bus1_Sel [1:0] $end
+$var wire 1 ) B_Load $end
+$var wire 1 * A_Load $end
+$var wire 3 + ALU_Sel [2:0] $end
+$var parameter 8 , ADD_AB $end
+$var parameter 8 - BNE $end
+$var parameter 8 . DECA $end
+$var parameter 8 / LDA_DIR $end
+$var parameter 8 0 LDA_IMM $end
+$var parameter 8 1 STA_DIR $end
+$var reg 4 2 CCR_Result [3:0] $end
+$var reg 8 3 IR [7:0] $end
+$var reg 1 4 clk $end
+$var reg 1 5 reset $end
+$scope module dut $end
+$var wire 4 6 CCR_Result [3:0] $end
+$var wire 8 7 IR [7:0] $end
+$var wire 1 4 clk $end
+$var wire 1 5 reset $end
+$var parameter 3 8 ADD $end
+$var parameter 32 9 ADD_0 $end
+$var parameter 32 : ADD_1 $end
+$var parameter 8 ; ADD_AB $end
+$var parameter 3 < AND $end
+$var parameter 32 = AND_0 $end
+$var parameter 32 > AND_1 $end
+$var parameter 8 ? AND_AB $end
+$var parameter 8 @ BCC $end
+$var parameter 32 A BCC_0 $end
+$var parameter 32 B BCC_1 $end
+$var parameter 32 C BCC_2 $end
+$var parameter 8 D BCS $end
+$var parameter 32 E BCS_0 $end
+$var parameter 32 F BCS_1 $end
+$var parameter 32 G BCS_2 $end
+$var parameter 8 H BEQ $end
+$var parameter 32 I BEQ_0 $end
+$var parameter 32 J BEQ_1 $end
+$var parameter 32 K BEQ_2 $end
+$var parameter 8 L BMI $end
+$var parameter 32 M BMI_0 $end
+$var parameter 32 N BMI_1 $end
+$var parameter 32 O BMI_2 $end
+$var parameter 8 P BNE $end
+$var parameter 32 Q BNE_0 $end
+$var parameter 32 R BNE_1 $end
+$var parameter 32 S BNE_2 $end
+$var parameter 8 T BPL $end
+$var parameter 32 U BPL_0 $end
+$var parameter 32 V BPL_1 $end
+$var parameter 32 W BPL_2 $end
+$var parameter 8 X BRA $end
+$var parameter 32 Y BRA_0 $end
+$var parameter 32 Z BRA_1 $end
+$var parameter 32 [ BRA_2 $end
+$var parameter 8 \ BVC $end
+$var parameter 32 ] BVC_0 $end
+$var parameter 32 ^ BVC_1 $end
+$var parameter 32 _ BVC_2 $end
+$var parameter 8 ` BVS $end
+$var parameter 32 a BVS_0 $end
+$var parameter 32 b BVS_1 $end
+$var parameter 32 c BVS_2 $end
+$var parameter 3 d DEC $end
+$var parameter 8 e DECA $end
+$var parameter 8 f DECB $end
+$var parameter 32 g DECODE $end
+$var parameter 32 h DEC_0 $end
+$var parameter 32 i DEC_1 $end
+$var parameter 32 j DEC_B $end
+$var parameter 32 k FETCH_0 $end
+$var parameter 32 l FETCH_1 $end
+$var parameter 32 m FETCH_2 $end
+$var parameter 3 n INC $end
+$var parameter 8 o INCA $end
+$var parameter 8 p INCB $end
+$var parameter 32 q INC_0 $end
+$var parameter 32 r INC_1 $end
+$var parameter 32 s INC_B $end
+$var parameter 8 t LDA_DIR $end
+$var parameter 32 u LDA_DIR_0 $end
+$var parameter 32 v LDA_DIR_1 $end
+$var parameter 32 w LDA_DIR_2 $end
+$var parameter 32 x LDA_DIR_3 $end
+$var parameter 32 y LDA_DIR_4 $end
+$var parameter 8 z LDA_IMM $end
+$var parameter 32 { LDA_IMM_0 $end
+$var parameter 32 | LDA_IMM_1 $end
+$var parameter 32 } LDA_IMM_2 $end
+$var parameter 8 ~ LDB_DIR $end
+$var parameter 32 !" LDB_DIR_0 $end
+$var parameter 32 "" LDB_DIR_1 $end
+$var parameter 32 #" LDB_DIR_2 $end
+$var parameter 32 $" LDB_DIR_3 $end
+$var parameter 32 %" LDB_DIR_4 $end
+$var parameter 8 &" LDB_IMM $end
+$var parameter 32 '" LDB_IMM_0 $end
+$var parameter 32 (" LDB_IMM_1 $end
+$var parameter 32 )" LDB_IMM_2 $end
+$var parameter 3 *" NOT $end
+$var parameter 8 +" NOTA $end
+$var parameter 8 ," NOTB $end
+$var parameter 32 -" NOT_0 $end
+$var parameter 32 ." NOT_1 $end
+$var parameter 32 /" NOT_B $end
+$var parameter 3 0" OR $end
+$var parameter 32 1" OR_0 $end
+$var parameter 32 2" OR_1 $end
+$var parameter 8 3" OR_AB $end
+$var parameter 8 4" STA_DIR $end
+$var parameter 32 5" STA_DIR_0 $end
+$var parameter 32 6" STA_DIR_1 $end
+$var parameter 32 7" STA_DIR_2 $end
+$var parameter 32 8" STA_DIR_3 $end
+$var parameter 8 9" STB_DIR $end
+$var parameter 32 :" STB_DIR_0 $end
+$var parameter 32 ;" STB_DIR_1 $end
+$var parameter 32 <" STB_DIR_2 $end
+$var parameter 32 =" STB_DIR_3 $end
+$var parameter 3 >" SUB $end
+$var parameter 32 ?" SUB_0 $end
+$var parameter 32 @" SUB_1 $end
+$var parameter 8 A" SUB_AB $end
+$var parameter 3 B" XOR $end
+$var parameter 32 C" XOR_0 $end
+$var parameter 32 D" XOR_1 $end
+$var parameter 8 E" XOR_AB $end
+$var reg 3 F" ALU_Sel [2:0] $end
+$var reg 1 * A_Load $end
+$var reg 1 ) B_Load $end
+$var reg 2 G" Bus1_Sel [1:0] $end
+$var reg 2 H" Bus2_Sel [1:0] $end
+$var reg 1 & CCR_Load $end
+$var reg 1 % IR_Load $end
+$var reg 1 $ MAR_Load $end
+$var reg 1 # PC_Inc $end
+$var reg 1 " PC_Load $end
+$var reg 8 I" current_state [7:0] $end
+$var reg 8 J" next_state [7:0] $end
+$var reg 1 ! write $end
+$scope begin INITIAL_STATE $end
+$upscope $end
+$scope begin NEXT_STATE_LOGIC $end
+$upscope $end
+$scope begin OUTPUT_LOGIC $end
+$upscope $end
+$scope begin STATE_MEMORY $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001010 E"
+b100011 D"
+b100010 C"
+b110 B"
+b1000011 A"
+b11000 @"
+b10111 ?"
+b10 >"
+b1110011 ="
+b1110010 <"
+b1110001 ;"
+b1110000 :"
+b10010111 9"
+b1111 8"
+b1110 7"
+b1101 6"
+b1100 5"
+b10010110 4"
+b1000101 3"
+b100001 2"
+b100000 1"
+b101 0"
+b100110 /"
+b100101 ."
+b100100 -"
+b1001100 ,"
+b1001011 +"
+b111 *"
+b1101010 )"
+b1101001 ("
+b1101000 '"
+b10001000 &"
+b1101111 %"
+b1101110 $"
+b1101101 #"
+b1101100 ""
+b1101011 !"
+b10001001 ~
+b110 }
+b101 |
+b100 {
+b10000110 z
+b1011 y
+b1010 x
+b1001 w
+b1000 v
+b111 u
+b10000111 t
+b10100 s
+b10011 r
+b10010 q
+b1000111 p
+b1000110 o
+b1 n
+b10 m
+b1 l
+b0 k
+b11011 j
+b11010 i
+b11001 h
+b11 g
+b1001001 f
+b1001000 e
+b11 d
+b10011000 c
+b110100 b
+b110011 a
+b100101 `
+b10011010 _
+b110110 ^
+b110101 ]
+b100110 \
+b10001100 [
+b101000 Z
+b100111 Y
+b100000 X
+b10010000 W
+b101100 V
+b101011 U
+b100010 T
+b10010110 S
+b110010 R
+b110001 Q
+b100100 P
+b10001110 O
+b101010 N
+b101001 M
+b100001 L
+b10010010 K
+b101110 J
+b101101 I
+b100011 H
+b10011100 G
+b111000 F
+b110111 E
+b100111 D
+b10011110 C
+b111010 B
+b111001 A
+b101000 @
+b1000100 ?
+b11111 >
+b11110 =
+b100 <
+b1000010 ;
+b10001 :
+b10000 9
+b0 8
+b10010110 1
+b10000110 0
+b10000111 /
+b1001000 .
+b100100 -
+b1000010 ,
+$end
+#0
+$dumpvars
+b1 J"
+b0 I"
+b1 H"
+b0 G"
+b0 F"
+bx 7
+bx 6
+05
+04
+bx 3
+bx 2
+b0 +
+0*
+0)
+b0 (
+b1 '
+0&
+0%
+1$
+0#
+0"
+0!
+$end
+#5000
+14
+#10000
+04
+#12000
+15
+#15000
+1#
+0$
+b10 J"
+b1 I"
+b10000110 3
+b10000110 7
+14
+#20000
+04
+#25000
+b10 '
+b10 H"
+1%
+0#
+b11 J"
+b10 I"
+14
+#30000
+04
+#35000
+b0 '
+b0 H"
+0%
+b100 J"
+b11 I"
+14
+#40000
+04
+#45000
+b1 '
+b1 H"
+1$
+b101 J"
+b100 I"
+14
+#50000
+04
+#55000
+1#
+0$
+b110 J"
+b101 I"
+14
+#60000
+04
+#65000
+b10 '
+b10 H"
+1*
+0#
+b0 J"
+b110 I"
+14
+#70000
+04
+#75000
+b1 '
+b1 H"
+1$
+0*
+b1 J"
+b0 I"
+14
+05
+#80000
+04
+#85000
+14
+#87000
+15
+#90000
+04
+#95000
+1#
+0$
+b10 J"
+b1 I"
+b10010110 3
+b10010110 7
+14
+#100000
+04
+#105000
+b10 '
+b10 H"
+1%
+0#
+b11 J"
+b10 I"
+14
+#110000
+04
+#115000
+b0 '
+b0 H"
+0%
+b1100 J"
+b11 I"
+14
+#120000
+04
+#125000
+b1 '
+b1 H"
+1$
+b1101 J"
+b1100 I"
+14
+#130000
+04
+#135000
+1#
+0$
+b1110 J"
+b1101 I"
+14
+#140000
+04
+#145000
+b10 '
+b10 H"
+1$
+0#
+b1111 J"
+b1110 I"
+14
+#150000
+04
+#155000
+b1 (
+b1 G"
+1!
+0$
+b0 J"
+b1111 I"
+14
+#160000
+04
+#165000
+b1 '
+b1 H"
+b0 (
+b0 G"
+1$
+0!
+b1 J"
+b0 I"
+14
+#170000
+04
+#175000
+14
+05
+#180000
+04
+#185000
+14
+#187000
+15
+#190000
+04
+#195000
+1#
+0$
+b10 J"
+b1 I"
+b0 2
+b0 6
+b100100 3
+b100100 7
+14
+#200000
+04
+#205000
+b10 '
+b10 H"
+1%
+0#
+b11 J"
+b10 I"
+14
+#210000
+04
+#215000
+b0 '
+b0 H"
+0%
+b110001 J"
+b11 I"
+14
+#220000
+04
+#225000
+b1 '
+b1 H"
+1$
+b110010 J"
+b110001 I"
+14
+#230000
+04
+#235000
+0$
+b10010110 J"
+b110010 I"
+14
+#240000
+04
+#245000
+b10 '
+b10 H"
+1"
+1#
+b0 J"
+b10010110 I"
+14
+#250000
+04
+#255000
+b1 '
+b1 H"
+1$
+0#
+0"
+b1 J"
+b0 I"
+14
+05
+#260000
+04
+#265000
+14
+#267000
+15
+#270000
+04
+#275000
+b10 J"
+1#
+0$
+b1 I"
+b100 2
+b100 6
+14
+#280000
+04
+#285000
+b10 '
+b10 H"
+1%
+0#
+b11 J"
+b10 I"
+14
+#290000
+04
+#295000
+b0 '
+b0 H"
+0%
+b110001 J"
+b11 I"
+14
+#300000
+04
+#305000
+b1 '
+b1 H"
+1$
+b110010 J"
+b110001 I"
+14
+#310000
+04
+#315000
+0$
+b10010110 J"
+b110010 I"
+14
+#320000
+04
+#325000
+b10 '
+b10 H"
+1#
+b0 J"
+b10010110 I"
+14
+#330000
+04
+#335000
+b1 '
+b1 H"
+1$
+0#
+b1 J"
+b0 I"
+14
+#340000
+04
+#345000
+1#
+0$
+b10 J"
+b1 I"
+14
+#350000
+04
+#355000
+b10 '
+b10 H"
+1%
+0#
+b11 J"
+b10 I"
+14
